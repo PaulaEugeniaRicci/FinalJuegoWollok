@@ -74,7 +74,7 @@ object nivelEnemigos {
 		enemigos.forEach{ e => 
 			game.whenCollideDo(e, {jugador => 
 				if(jugador.puedeRecibirDanio() and !jugador.haceDanio()){
-					e.hacerDanio(player)
+					e.hacerDanio(jugador)
 					if (jugador.salud()<=0) { self.perder() }
 				}
 			})
