@@ -39,14 +39,14 @@ object nivelEnemigos {
 		const enemigoRand= []
 		
 		2.times({ i=> enemigosNormalYAcecho.add(new EnemigoNormal(position = utilidades.posRand(), image="alien.png", nivelDanio = 3, direccion = izquierda))})
-		//2.times({ i=> enemigoRand.add(new EnemigoRandom(position = utilidades.posRand(), image="meteorito.png", nivelDanio = 10, direccion = izquierda))})
+		2.times({ i=> enemigoRand.add(new EnemigoRandom(position = utilidades.posRand(), image="meteorito.png", nivelDanio = 10, direccion = izquierda))})
 		1.times({ i=> enemigosNormalYAcecho.add(new EnemigoAlAcecho(position = utilidades.posRand(), image="meteorito2.png",nivelDanio = 15, direccion = izquierda))})
 		
 		enemigosNormalYAcecho.forEach{ e => game.addVisual(e)}
-		//enemigoRand.forEach{ e => game.addVisual(e)}
+		enemigoRand.forEach{ e => game.addVisual(e)}
 		
 		const objetivoEnemigos = enemigosNormalYAcecho.size() + enemigoRand.size()
-		const enemigos= enemigoRand //+ enemigosNormalYAcecho
+		const enemigos= enemigoRand + enemigosNormalYAcecho
 		
 		// 4.MUNICIONES
 		const municiones = []
