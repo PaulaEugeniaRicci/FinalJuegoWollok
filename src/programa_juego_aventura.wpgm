@@ -1,0 +1,13 @@
+import wollok.game.*
+import inicio.*
+
+program juego_aventura {
+
+	game.title("La aventura de Astrom")
+	game.height(16)
+	game.width(15)
+	game.boardGround("fondoBlanco.png")
+	
+	niveles.configurate()
+	game.start()
+} 

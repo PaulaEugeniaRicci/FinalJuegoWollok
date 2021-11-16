@@ -1,0 +1,21 @@
+
+Nivel 1:
+
+
+Reglas y clases:
+
+ Cajas: se van a mover si tiene un lugar disponible hacia la direccion donde se esta moviendo el player
+ Cosumibles: Cuando agarra el player el cosumible otorga :  -botiquin (Salud)- -hamburguesa(Energia)- billete(Dinero - Nivel2)- -municiones 
+ Enemigo: Cuando el enemigo colisiona con player le resta energia -10
+ Deposito: 4 posiciones dinamicas que se pueden pisar y es la llegada de las cajas, si todas las cajas estan en el deposito - Player gana.
+ Sorpresa: Elemento quita 15 energia.
+		 Elemento agrega 30 puntos de energia
+			hace aparecer un obj posicion aleatoria.
+				teletransporta a posicion aleatoria al player
+ Proyectil: El personaje ahora tiene un marcador de municiones nace en 0 y en el tablero se puede agarrar al momento de colisionar
+ 		Player dispara con D (Disparar)
+
+ 
+ 
+
+ 
