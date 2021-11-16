@@ -76,6 +76,7 @@ object nivelBloques {
 		keyboard.q().onPressDo({ self.perder() })
 		keyboard.r().onPressDo{ self.restart() }
 		keyboard.any().onPressDo{ self.pasarNivel(elementos) }
+		//game.onTick(2500,"verificarCambioNivel",{ self.pasarNivel(elementos) })
 		
 		// COLISIONES
 		game.whenCollideDo(player, { elemento =>
