@@ -96,7 +96,7 @@ object nivelBloques {
 		enemigos.forEach{ e => 
 			game.whenCollideDo(e, {jugador => 
 				if(jugador.puedeRecibirDanio() and !jugador.haceDanio()){ 
-					e.hacerDanio(player) 
+					e.hacerDanio(jugador) 
 					game.removeVisual(e)
 					if (jugador.salud()<=0) { self.perder() }
 				}
